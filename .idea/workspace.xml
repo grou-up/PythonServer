@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df19cd94-53ce-463d-b4ce-4830038ca66d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="df19cd94-53ce-463d-b4ce-4830038ca66d" name="Changes" comment="[feat] second file upload">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/eb4876c0-7dcb-4bee-a5a8-63430957e0e7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eb4876c0-7dcb-4bee-a5a8-63430957e0e7.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoServer/lottoTest/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoServer/lottoTest/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DjangoServer/lottoTest/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoServer/lottoTest/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +41,9 @@
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
+    "django.template.preview.state": "SHOW_EDITOR",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/song/Desktop/Github/DjangoServer/DjangoServer",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -57,6 +57,11 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/DjangoServer" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="DjangoServer" type="Python.DjangoServer" factoryName="Django server">
       <module name="DjangoServer" />
@@ -68,6 +73,7 @@
         <env name="DJANGO_SETTINGS_MODULE" value="DjangoServer.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.9 (DjangoServer)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -106,11 +112,61 @@
       <workItem from="1732109425729" duration="2928000" />
       <workItem from="1732197690046" duration="4704000" />
       <workItem from="1733815829581" duration="2000" />
-      <workItem from="1734145303971" duration="19550000" />
+      <workItem from="1734145303971" duration="19801000" />
+      <workItem from="1734274097574" duration="49212000" />
     </task>
+    <task id="LOCAL-00001" summary="entity set">
+      <option name="closed" value="true" />
+      <created>1734273689996</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734273689996</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Margin table fix">
+      <option name="closed" value="true" />
+      <created>1734274227247</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734274227247</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[feat] models add">
+      <option name="closed" value="true" />
+      <created>1734447154879</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1734447154880</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[feat] views.py add">
+      <option name="closed" value="true" />
+      <created>1734496567440</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1734496567440</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[feat] second file upload">
+      <option name="closed" value="true" />
+      <created>1734503924511</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1734503924511</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="entity set" />
+    <MESSAGE value="Margin table fix" />
+    <MESSAGE value="[feat] models add" />
+    <MESSAGE value="[feat] views.py add" />
+    <MESSAGE value="[feat] second file upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat] second file upload" />
   </component>
 </project>
