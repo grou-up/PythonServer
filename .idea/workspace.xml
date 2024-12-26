@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df19cd94-53ce-463d-b4ce-4830038ca66d" name="Changes" comment="[feat] second file upload">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eb4876c0-7dcb-4bee-a5a8-63430957e0e7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eb4876c0-7dcb-4bee-a5a8-63430957e0e7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DjangoServer/lottoTest/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoServer/lottoTest/views.py" afterDir="false" />
     </list>
@@ -35,28 +35,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Django Server.DjangoServer.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
-    "django.template.preview.state": "SHOW_EDITOR",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/song/Desktop/Github/DjangoServer/DjangoServer",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Django Server.DjangoServer.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/song/Desktop/Github/DjangoServer/DjangoServer&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql_aurora"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql_aurora&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/DjangoServer" />
@@ -113,7 +113,14 @@
       <workItem from="1732197690046" duration="4704000" />
       <workItem from="1733815829581" duration="2000" />
       <workItem from="1734145303971" duration="19801000" />
-      <workItem from="1734274097574" duration="49212000" />
+      <workItem from="1734274097574" duration="56171000" />
+      <workItem from="1734593511517" duration="5833000" />
+      <workItem from="1734926444412" duration="2663000" />
+      <workItem from="1734935300339" duration="3612000" />
+      <workItem from="1735019575072" duration="171000" />
+      <workItem from="1735098922467" duration="1046000" />
+      <workItem from="1735131442004" duration="1084000" />
+      <workItem from="1735186611232" duration="669000" />
     </task>
     <task id="LOCAL-00001" summary="entity set">
       <option name="closed" value="true" />
