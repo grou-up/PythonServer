@@ -1079,7 +1079,7 @@ test|schema||board||UPDATE|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="309" parent="1" name="SecretPang">
-      <LastIntrospectionLocalTimestamp>2024-12-18.06:12:45</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2025-01-06.15:08:29</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <user id="310" parent="1" name="board"/>
@@ -1108,137 +1108,133 @@ test|schema||board||UPDATE|G</Grants>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <table id="317" parent="309" name="auth_group">
+    <table id="317" parent="309" name="campaign">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="318" parent="309" name="auth_group_permissions">
+    <table id="318" parent="309" name="campaign_option_details">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="319" parent="309" name="auth_permission">
+    <table id="319" parent="309" name="execution">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="320" parent="309" name="auth_user">
+    <table id="320" parent="309" name="keyword">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="321" parent="309" name="auth_user_groups">
+    <table id="321" parent="309" name="keyword_detail">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="322" parent="309" name="auth_user_user_permissions">
+    <table id="322" parent="309" name="margin">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="323" parent="309" name="campaign">
+    <table id="323" parent="309" name="member">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="324" parent="309" name="campaign_option_details">
+    <table id="324" parent="309" name="memo">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="325" parent="309" name="category">
+    <table id="325" parent="309" name="record">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="326" parent="309" name="django_admin_log">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </table>
-    <table id="327" parent="309" name="django_content_type">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </table>
-    <table id="328" parent="309" name="django_migrations">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </table>
-    <table id="329" parent="309" name="execution">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </table>
-    <table id="330" parent="309" name="keyword">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </table>
-    <table id="331" parent="309" name="lotto">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </table>
-    <table id="332" parent="309" name="margin">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </table>
-    <table id="333" parent="309" name="member">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </table>
-    <table id="334" parent="309" name="memo">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </table>
-    <table id="335" parent="309" name="record">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </table>
-    <column id="336" parent="317" name="id">
-      <AutoIncrement>1</AutoIncrement>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <column id="337" parent="317" name="name">
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StoredType>varchar(150)|0s</StoredType>
-    </column>
-    <index id="338" parent="317" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <index id="339" parent="317" name="name">
-      <ColNames>name</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="340" parent="317" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <key id="341" parent="317" name="name">
-      <UnderlyingIndexName>name</UnderlyingIndexName>
-    </key>
-    <column id="342" parent="318" name="id">
-      <AutoIncrement>1</AutoIncrement>
+    <column id="326" parent="317" name="campaign_id">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="343" parent="318" name="group_id">
-      <NotNull>1</NotNull>
+    <column id="327" parent="317" name="cam_ad_type">
       <Position>2</Position>
-      <StoredType>int|0s</StoredType>
+      <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <column id="344" parent="318" name="permission_id">
-      <NotNull>1</NotNull>
+    <column id="328" parent="317" name="cam_campaign_name">
       <Position>3</Position>
-      <StoredType>int|0s</StoredType>
+      <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <foreign-key id="345" parent="318" name="auth_group_permissions_group_id_b120cbf9_fk_auth_group_id">
-      <ColNames>group_id</ColNames>
-      <RefColNames>id</RefColNames>
-      <RefTableName>auth_group</RefTableName>
+    <column id="329" parent="317" name="email">
+      <Position>4</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <foreign-key id="330" parent="317" name="FKexndf7vbb9grmilhd6hr9q2xf">
+      <ColNames>email</ColNames>
+      <RefColNames>email</RefColNames>
+      <RefTableName>member</RefTableName>
       <RefTableParentName>secretpang</RefTableParentName>
     </foreign-key>
-    <foreign-key id="346" parent="318" name="auth_group_permissio_permission_id_84c5c92e_fk_auth_perm">
-      <ColNames>permission_id</ColNames>
-      <RefColNames>id</RefColNames>
-      <RefTableName>auth_permission</RefTableName>
+    <index id="331" parent="317" name="PRIMARY">
+      <ColNames>campaign_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="332" parent="317" name="FKexndf7vbb9grmilhd6hr9q2xf">
+      <ColNames>email</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="333" parent="317" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="334" parent="318" name="id">
+      <AutoIncrement>1279</AutoIncrement>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="335" parent="318" name="cop_adcost">
+      <Position>2</Position>
+      <StoredType>double|0s</StoredType>
+    </column>
+    <column id="336" parent="318" name="cop_adsales">
+      <Position>3</Position>
+      <StoredType>double|0s</StoredType>
+    </column>
+    <column id="337" parent="318" name="cop_click_rate">
+      <Position>4</Position>
+      <StoredType>double|0s</StoredType>
+    </column>
+    <column id="338" parent="318" name="cop_clicks">
+      <Position>5</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="339" parent="318" name="cop_cvr">
+      <Position>6</Position>
+      <StoredType>double|0s</StoredType>
+    </column>
+    <column id="340" parent="318" name="cop_date">
+      <Position>7</Position>
+      <StoredType>date|0s</StoredType>
+    </column>
+    <column id="341" parent="318" name="cop_impressions">
+      <Position>8</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="342" parent="318" name="cop_roas">
+      <Position>9</Position>
+      <StoredType>double|0s</StoredType>
+    </column>
+    <column id="343" parent="318" name="cop_sales">
+      <Position>10</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="344" parent="318" name="cop_search_type">
+      <Position>11</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <column id="345" parent="318" name="execution_id">
+      <Position>12</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <foreign-key id="346" parent="318" name="FKpb81rmdlvutyhq9byk8sini1d">
+      <ColNames>execution_id</ColNames>
+      <RefColNames>execution_id</RefColNames>
+      <RefTableName>execution</RefTableName>
       <RefTableParentName>secretpang</RefTableParentName>
     </foreign-key>
     <index id="347" parent="318" name="PRIMARY">
@@ -1246,1028 +1242,524 @@ test|schema||board||UPDATE|G</Grants>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="348" parent="318" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
-      <ColNames>group_id
-permission_id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <index id="349" parent="318" name="auth_group_permissio_permission_id_84c5c92e_fk_auth_perm">
-      <ColNames>permission_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="350" parent="318" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <key id="351" parent="318" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
-      <UnderlyingIndexName>auth_group_permissions_group_id_permission_id_0cd325b0_uniq</UnderlyingIndexName>
-    </key>
-    <column id="352" parent="319" name="id">
-      <AutoIncrement>1</AutoIncrement>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <column id="353" parent="319" name="name">
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StoredType>varchar(255)|0s</StoredType>
-    </column>
-    <column id="354" parent="319" name="content_type_id">
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <column id="355" parent="319" name="codename">
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-      <StoredType>varchar(100)|0s</StoredType>
-    </column>
-    <foreign-key id="356" parent="319" name="auth_permission_content_type_id_2f476e4b_fk_django_co">
-      <ColNames>content_type_id</ColNames>
-      <RefColNames>id</RefColNames>
-      <RefTableName>django_content_type</RefTableName>
-      <RefTableParentName>secretpang</RefTableParentName>
-    </foreign-key>
-    <index id="357" parent="319" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <index id="358" parent="319" name="auth_permission_content_type_id_codename_01ab375a_uniq">
-      <ColNames>content_type_id
-codename</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="359" parent="319" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <key id="360" parent="319" name="auth_permission_content_type_id_codename_01ab375a_uniq">
-      <UnderlyingIndexName>auth_permission_content_type_id_codename_01ab375a_uniq</UnderlyingIndexName>
-    </key>
-    <column id="361" parent="320" name="id">
-      <AutoIncrement>1</AutoIncrement>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <column id="362" parent="320" name="password">
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StoredType>varchar(128)|0s</StoredType>
-    </column>
-    <column id="363" parent="320" name="last_login">
-      <Position>3</Position>
-      <StoredType>datetime(6)|0s</StoredType>
-    </column>
-    <column id="364" parent="320" name="is_superuser">
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-      <StoredType>tinyint(1)|0s</StoredType>
-    </column>
-    <column id="365" parent="320" name="username">
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-      <StoredType>varchar(150)|0s</StoredType>
-    </column>
-    <column id="366" parent="320" name="first_name">
-      <NotNull>1</NotNull>
-      <Position>6</Position>
-      <StoredType>varchar(150)|0s</StoredType>
-    </column>
-    <column id="367" parent="320" name="last_name">
-      <NotNull>1</NotNull>
-      <Position>7</Position>
-      <StoredType>varchar(150)|0s</StoredType>
-    </column>
-    <column id="368" parent="320" name="email">
-      <NotNull>1</NotNull>
-      <Position>8</Position>
-      <StoredType>varchar(254)|0s</StoredType>
-    </column>
-    <column id="369" parent="320" name="is_staff">
-      <NotNull>1</NotNull>
-      <Position>9</Position>
-      <StoredType>tinyint(1)|0s</StoredType>
-    </column>
-    <column id="370" parent="320" name="is_active">
-      <NotNull>1</NotNull>
-      <Position>10</Position>
-      <StoredType>tinyint(1)|0s</StoredType>
-    </column>
-    <column id="371" parent="320" name="date_joined">
-      <NotNull>1</NotNull>
-      <Position>11</Position>
-      <StoredType>datetime(6)|0s</StoredType>
-    </column>
-    <index id="372" parent="320" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <index id="373" parent="320" name="username">
-      <ColNames>username</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="374" parent="320" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <key id="375" parent="320" name="username">
-      <UnderlyingIndexName>username</UnderlyingIndexName>
-    </key>
-    <column id="376" parent="321" name="id">
-      <AutoIncrement>1</AutoIncrement>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="377" parent="321" name="user_id">
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <column id="378" parent="321" name="group_id">
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <foreign-key id="379" parent="321" name="auth_user_groups_user_id_6a12ed8b_fk_auth_user_id">
-      <ColNames>user_id</ColNames>
-      <RefColNames>id</RefColNames>
-      <RefTableName>auth_user</RefTableName>
-      <RefTableParentName>secretpang</RefTableParentName>
-    </foreign-key>
-    <foreign-key id="380" parent="321" name="auth_user_groups_group_id_97559544_fk_auth_group_id">
-      <ColNames>group_id</ColNames>
-      <RefColNames>id</RefColNames>
-      <RefTableName>auth_group</RefTableName>
-      <RefTableParentName>secretpang</RefTableParentName>
-    </foreign-key>
-    <index id="381" parent="321" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <index id="382" parent="321" name="auth_user_groups_user_id_group_id_94350c0c_uniq">
-      <ColNames>user_id
-group_id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <index id="383" parent="321" name="auth_user_groups_group_id_97559544_fk_auth_group_id">
-      <ColNames>group_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="384" parent="321" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <key id="385" parent="321" name="auth_user_groups_user_id_group_id_94350c0c_uniq">
-      <UnderlyingIndexName>auth_user_groups_user_id_group_id_94350c0c_uniq</UnderlyingIndexName>
-    </key>
-    <column id="386" parent="322" name="id">
-      <AutoIncrement>1</AutoIncrement>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="387" parent="322" name="user_id">
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <column id="388" parent="322" name="permission_id">
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <foreign-key id="389" parent="322" name="auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id">
-      <ColNames>user_id</ColNames>
-      <RefColNames>id</RefColNames>
-      <RefTableName>auth_user</RefTableName>
-      <RefTableParentName>secretpang</RefTableParentName>
-    </foreign-key>
-    <foreign-key id="390" parent="322" name="auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm">
-      <ColNames>permission_id</ColNames>
-      <RefColNames>id</RefColNames>
-      <RefTableName>auth_permission</RefTableName>
-      <RefTableParentName>secretpang</RefTableParentName>
-    </foreign-key>
-    <index id="391" parent="322" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <index id="392" parent="322" name="auth_user_user_permissions_user_id_permission_id_14a6b632_uniq">
-      <ColNames>user_id
-permission_id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <index id="393" parent="322" name="auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm">
-      <ColNames>permission_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="394" parent="322" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <key id="395" parent="322" name="auth_user_user_permissions_user_id_permission_id_14a6b632_uniq">
-      <UnderlyingIndexName>auth_user_user_permissions_user_id_permission_id_14a6b632_uniq</UnderlyingIndexName>
-    </key>
-    <column id="396" parent="323" name="campaign_id">
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="397" parent="323" name="cam_ad_type">
-      <Position>2</Position>
-      <StoredType>varchar(255)|0s</StoredType>
-    </column>
-    <column id="398" parent="323" name="cam_campaign_name">
-      <Position>3</Position>
-      <StoredType>varchar(255)|0s</StoredType>
-    </column>
-    <column id="399" parent="323" name="email">
-      <Position>4</Position>
-      <StoredType>varchar(255)|0s</StoredType>
-    </column>
-    <foreign-key id="400" parent="323" name="FKexndf7vbb9grmilhd6hr9q2xf">
-      <ColNames>email</ColNames>
-      <RefColNames>email</RefColNames>
-      <RefTableName>member</RefTableName>
-      <RefTableParentName>secretpang</RefTableParentName>
-    </foreign-key>
-    <index id="401" parent="323" name="PRIMARY">
-      <ColNames>campaign_id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <index id="402" parent="323" name="FKexndf7vbb9grmilhd6hr9q2xf">
-      <ColNames>email</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="403" parent="323" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="404" parent="324" name="cop_adcost">
-      <Position>1</Position>
-      <StoredType>double|0s</StoredType>
-    </column>
-    <column id="405" parent="324" name="cop_adsales">
-      <Position>2</Position>
-      <StoredType>double|0s</StoredType>
-    </column>
-    <column id="406" parent="324" name="cop_click_rate">
-      <Position>3</Position>
-      <StoredType>double|0s</StoredType>
-    </column>
-    <column id="407" parent="324" name="cop_cvr">
-      <Position>4</Position>
-      <StoredType>double|0s</StoredType>
-    </column>
-    <column id="408" parent="324" name="cop_date">
-      <Position>5</Position>
-      <StoredType>date|0s</StoredType>
-    </column>
-    <column id="409" parent="324" name="cop_roas">
-      <Position>6</Position>
-      <StoredType>double|0s</StoredType>
-    </column>
-    <column id="410" parent="324" name="cop_clicks">
-      <Position>7</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="411" parent="324" name="cop_impressions">
-      <Position>8</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="412" parent="324" name="cop_sales">
-      <Position>9</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="413" parent="324" name="execution_id">
-      <Position>10</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="414" parent="324" name="id">
-      <AutoIncrement>1279</AutoIncrement>
-      <NotNull>1</NotNull>
-      <Position>11</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="415" parent="324" name="cop_search_type">
-      <Position>12</Position>
-      <StoredType>varchar(255)|0s</StoredType>
-    </column>
-    <foreign-key id="416" parent="324" name="FKpb81rmdlvutyhq9byk8sini1d">
-      <ColNames>execution_id</ColNames>
-      <RefColNames>execution_id</RefColNames>
-      <RefTableName>execution</RefTableName>
-      <RefTableParentName>secretpang</RefTableParentName>
-    </foreign-key>
-    <index id="417" parent="324" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <index id="418" parent="324" name="FKpb81rmdlvutyhq9byk8sini1d">
+    <index id="348" parent="318" name="FKpb81rmdlvutyhq9byk8sini1d">
       <ColNames>execution_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="419" parent="324" name="PRIMARY">
+    <key id="349" parent="318" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="420" parent="325" name="cat_option_id">
+    <column id="350" parent="319" name="execution_id">
+      <AutoIncrement>64</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="421" parent="325" name="cat_ad_product_name">
+    <column id="351" parent="319" name="exe_detail_category">
       <Position>2</Position>
       <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <column id="422" parent="325" name="cat_detail">
+    <column id="352" parent="319" name="exe_id">
       <Position>3</Position>
-      <StoredType>varchar(255)|0s</StoredType>
+      <StoredType>bigint|0s</StoredType>
     </column>
-    <index id="423" parent="325" name="PRIMARY">
-      <ColNames>cat_option_id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="424" parent="325" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <check id="425" parent="326" name="django_admin_log_chk_1">
-      <NameSurrogate>1</NameSurrogate>
-    </check>
-    <column id="426" parent="326" name="id">
-      <AutoIncrement>1</AutoIncrement>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <column id="427" parent="326" name="action_time">
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StoredType>datetime(6)|0s</StoredType>
-    </column>
-    <column id="428" parent="326" name="object_id">
-      <Position>3</Position>
-      <StoredType>longtext|0s</StoredType>
-    </column>
-    <column id="429" parent="326" name="object_repr">
-      <NotNull>1</NotNull>
+    <column id="353" parent="319" name="exe_product_name">
       <Position>4</Position>
-      <StoredType>varchar(200)|0s</StoredType>
+      <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <column id="430" parent="326" name="action_flag">
-      <NotNull>1</NotNull>
+    <column id="354" parent="319" name="campaign_id">
       <Position>5</Position>
-      <StoredType>smallint unsigned|0s</StoredType>
-    </column>
-    <column id="431" parent="326" name="change_message">
-      <NotNull>1</NotNull>
-      <Position>6</Position>
-      <StoredType>longtext|0s</StoredType>
-    </column>
-    <column id="432" parent="326" name="content_type_id">
-      <Position>7</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <column id="433" parent="326" name="user_id">
-      <NotNull>1</NotNull>
-      <Position>8</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <foreign-key id="434" parent="326" name="django_admin_log_content_type_id_c4bce8eb_fk_django_co">
-      <ColNames>content_type_id</ColNames>
-      <RefColNames>id</RefColNames>
-      <RefTableName>django_content_type</RefTableName>
-      <RefTableParentName>secretpang</RefTableParentName>
-    </foreign-key>
-    <foreign-key id="435" parent="326" name="django_admin_log_user_id_c564eba6_fk_auth_user_id">
-      <ColNames>user_id</ColNames>
-      <RefColNames>id</RefColNames>
-      <RefTableName>auth_user</RefTableName>
-      <RefTableParentName>secretpang</RefTableParentName>
-    </foreign-key>
-    <index id="436" parent="326" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <index id="437" parent="326" name="django_admin_log_content_type_id_c4bce8eb_fk_django_co">
-      <ColNames>content_type_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="438" parent="326" name="django_admin_log_user_id_c564eba6_fk_auth_user_id">
-      <ColNames>user_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="439" parent="326" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="440" parent="327" name="id">
-      <AutoIncrement>1</AutoIncrement>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <column id="441" parent="327" name="app_label">
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StoredType>varchar(100)|0s</StoredType>
-    </column>
-    <column id="442" parent="327" name="model">
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-      <StoredType>varchar(100)|0s</StoredType>
-    </column>
-    <index id="443" parent="327" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <index id="444" parent="327" name="django_content_type_app_label_model_76bd3d3b_uniq">
-      <ColNames>app_label
-model</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="445" parent="327" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <key id="446" parent="327" name="django_content_type_app_label_model_76bd3d3b_uniq">
-      <UnderlyingIndexName>django_content_type_app_label_model_76bd3d3b_uniq</UnderlyingIndexName>
-    </key>
-    <column id="447" parent="328" name="id">
-      <AutoIncrement>19</AutoIncrement>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
       <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="448" parent="328" name="app">
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StoredType>varchar(255)|0s</StoredType>
-    </column>
-    <column id="449" parent="328" name="name">
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-      <StoredType>varchar(255)|0s</StoredType>
-    </column>
-    <column id="450" parent="328" name="applied">
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-      <StoredType>datetime(6)|0s</StoredType>
-    </column>
-    <index id="451" parent="328" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="452" parent="328" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="453" parent="329" name="campaign_id">
-      <Position>1</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="454" parent="329" name="execution_id">
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="455" parent="329" name="exe_detail_category">
-      <Position>3</Position>
-      <StoredType>varchar(255)|0s</StoredType>
-    </column>
-    <column id="456" parent="329" name="exe_product_name">
-      <Position>4</Position>
-      <StoredType>varchar(255)|0s</StoredType>
-    </column>
-    <foreign-key id="457" parent="329" name="FKehji2ceee8gn4yhqk8xbj161j">
+    <foreign-key id="355" parent="319" name="FKehji2ceee8gn4yhqk8xbj161j">
       <ColNames>campaign_id</ColNames>
       <RefColNames>campaign_id</RefColNames>
       <RefTableName>campaign</RefTableName>
       <RefTableParentName>secretpang</RefTableParentName>
     </foreign-key>
-    <index id="458" parent="329" name="PRIMARY">
+    <index id="356" parent="319" name="PRIMARY">
       <ColNames>execution_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="459" parent="329" name="FKehji2ceee8gn4yhqk8xbj161j">
+    <index id="357" parent="319" name="FKehji2ceee8gn4yhqk8xbj161j">
       <ColNames>campaign_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="460" parent="329" name="PRIMARY">
+    <key id="358" parent="319" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="461" parent="330" name="key_adcost">
+    <column id="359" parent="320" name="id">
+      <AutoIncrement>3107</AutoIncrement>
+      <NotNull>1</NotNull>
       <Position>1</Position>
-      <StoredType>double|0s</StoredType>
+      <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="462" parent="330" name="key_adsales">
+    <column id="360" parent="320" name="key_adcost">
       <Position>2</Position>
       <StoredType>double|0s</StoredType>
     </column>
-    <column id="463" parent="330" name="key_click_rate">
+    <column id="361" parent="320" name="key_adsales">
       <Position>3</Position>
       <StoredType>double|0s</StoredType>
     </column>
-    <column id="464" parent="330" name="key_cpc">
+    <column id="362" parent="320" name="key_click_rate">
       <Position>4</Position>
       <StoredType>double|0s</StoredType>
     </column>
-    <column id="465" parent="330" name="key_cvr">
+    <column id="363" parent="320" name="key_clicks">
       <Position>5</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="364" parent="320" name="key_cpc">
+      <Position>6</Position>
       <StoredType>double|0s</StoredType>
     </column>
-    <column id="466" parent="330" name="key_date">
-      <Position>6</Position>
+    <column id="365" parent="320" name="key_cvr">
+      <Position>7</Position>
+      <StoredType>double|0s</StoredType>
+    </column>
+    <column id="366" parent="320" name="key_date">
+      <Position>8</Position>
       <StoredType>date|0s</StoredType>
     </column>
-    <column id="467" parent="330" name="key_exclude_flag">
-      <Position>7</Position>
+    <column id="367" parent="320" name="key_exclude_flag">
+      <Position>9</Position>
       <StoredType>bit(1)|0s</StoredType>
     </column>
-    <column id="468" parent="330" name="key_roas">
-      <Position>8</Position>
-      <StoredType>double|0s</StoredType>
-    </column>
-    <column id="469" parent="330" name="campaign_id">
-      <Position>9</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="470" parent="330" name="id">
-      <AutoIncrement>3223</AutoIncrement>
-      <NotNull>1</NotNull>
+    <column id="368" parent="320" name="key_impressions">
       <Position>10</Position>
       <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="471" parent="330" name="key_clicks">
+    <column id="369" parent="320" name="key_keyword">
       <Position>11</Position>
-      <StoredType>bigint|0s</StoredType>
+      <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <column id="472" parent="330" name="key_impressions">
+    <column id="370" parent="320" name="key_roas">
       <Position>12</Position>
-      <StoredType>bigint|0s</StoredType>
+      <StoredType>double|0s</StoredType>
     </column>
-    <column id="473" parent="330" name="key_total_sales">
+    <column id="371" parent="320" name="key_search_type">
       <Position>13</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <column id="372" parent="320" name="key_total_sales">
+      <Position>14</Position>
       <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="474" parent="330" name="key_keyword">
-      <Position>14</Position>
-      <StoredType>varchar(255)|0s</StoredType>
-    </column>
-    <column id="475" parent="330" name="key_search_type">
+    <column id="373" parent="320" name="campaign_id">
       <Position>15</Position>
-      <StoredType>varchar(255)|0s</StoredType>
+      <StoredType>bigint|0s</StoredType>
     </column>
-    <foreign-key id="476" parent="330" name="FKh8p6b3xdivd0ty62ykfbcvvjv">
+    <foreign-key id="374" parent="320" name="FKh8p6b3xdivd0ty62ykfbcvvjv">
       <ColNames>campaign_id</ColNames>
       <RefColNames>campaign_id</RefColNames>
       <RefTableName>campaign</RefTableName>
       <RefTableParentName>secretpang</RefTableParentName>
     </foreign-key>
-    <index id="477" parent="330" name="PRIMARY">
+    <index id="375" parent="320" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="478" parent="330" name="FKh8p6b3xdivd0ty62ykfbcvvjv">
+    <index id="376" parent="320" name="FKh8p6b3xdivd0ty62ykfbcvvjv">
       <ColNames>campaign_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="479" parent="330" name="PRIMARY">
+    <key id="377" parent="320" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="480" parent="331" name="id">
+    <column id="378" parent="321" name="id">
       <AutoIncrement>1</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="481" parent="331" name="file">
-      <NotNull>1</NotNull>
+    <column id="379" parent="321" name="kde_date">
       <Position>2</Position>
-      <StoredType>varchar(100)|0s</StoredType>
-    </column>
-    <column id="482" parent="331" name="uploaded_at">
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-      <StoredType>datetime(6)|0s</StoredType>
-    </column>
-    <column id="483" parent="331" name="lotto_id">
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <column id="484" parent="331" name="number_one">
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <column id="485" parent="331" name="number_two">
-      <NotNull>1</NotNull>
-      <Position>6</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <column id="486" parent="331" name="number_three">
-      <NotNull>1</NotNull>
-      <Position>7</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <column id="487" parent="331" name="number_four">
-      <NotNull>1</NotNull>
-      <Position>8</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <column id="488" parent="331" name="number_five">
-      <NotNull>1</NotNull>
-      <Position>9</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <column id="489" parent="331" name="number_six">
-      <NotNull>1</NotNull>
-      <Position>10</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <index id="490" parent="331" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="491" parent="331" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="492" parent="332" name="mar_ad_budget">
-      <Position>1</Position>
-      <StoredType>double|0s</StoredType>
-    </column>
-    <column id="493" parent="332" name="mar_ad_cost_ratio">
-      <Position>2</Position>
-      <StoredType>double|0s</StoredType>
-    </column>
-    <column id="494" parent="332" name="mar_ad_revenue">
-      <Position>3</Position>
-      <StoredType>double|0s</StoredType>
-    </column>
-    <column id="495" parent="332" name="mar_cpc_unit_cost">
-      <Position>4</Position>
-      <StoredType>double|0s</StoredType>
-    </column>
-    <column id="496" parent="332" name="mar_date">
-      <Position>5</Position>
       <StoredType>date|0s</StoredType>
     </column>
-    <column id="497" parent="332" name="mar_net_profit">
+    <column id="380" parent="321" name="kde_exe_id">
+      <Position>3</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="381" parent="321" name="kde_keyword">
+      <Position>4</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <column id="382" parent="321" name="kde_quantity_sold">
+      <Position>5</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="383" parent="321" name="kde_sales_revenue">
       <Position>6</Position>
-      <StoredType>double|0s</StoredType>
+      <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="498" parent="332" name="mar_target_efficiency">
+    <column id="384" parent="321" name="campaign_id">
       <Position>7</Position>
-      <StoredType>double|0s</StoredType>
-    </column>
-    <column id="499" parent="332" name="campaign_id">
-      <Position>8</Position>
       <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="500" parent="332" name="id">
-      <AutoIncrement>1</AutoIncrement>
-      <NotNull>1</NotNull>
-      <Position>9</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="501" parent="332" name="mar_actual_sales">
-      <Position>10</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="502" parent="332" name="mar_ad_conversion_sales">
-      <Position>11</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="503" parent="332" name="mar_ad_margin">
-      <Position>12</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="504" parent="332" name="mar_clicks">
-      <Position>13</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="505" parent="332" name="mar_impressions">
-      <Position>14</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <foreign-key id="506" parent="332" name="FKdcxcgdurlyu24lml3mclo5qyl">
+    <foreign-key id="385" parent="321" name="FKo2crjcqrei1tqgcfpi4a4vihw">
       <ColNames>campaign_id</ColNames>
       <RefColNames>campaign_id</RefColNames>
       <RefTableName>campaign</RefTableName>
       <RefTableParentName>secretpang</RefTableParentName>
     </foreign-key>
-    <index id="507" parent="332" name="PRIMARY">
+    <index id="386" parent="321" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="508" parent="332" name="FKdcxcgdurlyu24lml3mclo5qyl">
+    <index id="387" parent="321" name="FKo2crjcqrei1tqgcfpi4a4vihw">
       <ColNames>campaign_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="509" parent="332" name="PRIMARY">
+    <key id="388" parent="321" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="510" parent="333" name="created_at">
+    <column id="389" parent="322" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <NotNull>1</NotNull>
       <Position>1</Position>
-      <StoredType>datetime(6)|0s</StoredType>
+      <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="511" parent="333" name="remain_membership_time">
+    <column id="390" parent="322" name="mar_actual_sales">
+      <Position>2</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="391" parent="322" name="mar_ad_budget">
+      <Position>3</Position>
+      <StoredType>double|0s</StoredType>
+    </column>
+    <column id="392" parent="322" name="mar_ad_conversion_sales">
+      <Position>4</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="393" parent="322" name="mar_ad_cost_ratio">
+      <Position>5</Position>
+      <StoredType>double|0s</StoredType>
+    </column>
+    <column id="394" parent="322" name="mar_ad_margin">
+      <Position>6</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="395" parent="322" name="mar_ad_revenue">
+      <Position>7</Position>
+      <StoredType>double|0s</StoredType>
+    </column>
+    <column id="396" parent="322" name="mar_clicks">
+      <Position>8</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="397" parent="322" name="mar_cpc_unit_cost">
+      <Position>9</Position>
+      <StoredType>double|0s</StoredType>
+    </column>
+    <column id="398" parent="322" name="mar_date">
+      <Position>10</Position>
+      <StoredType>date|0s</StoredType>
+    </column>
+    <column id="399" parent="322" name="mar_impressions">
+      <Position>11</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="400" parent="322" name="mar_net_profit">
+      <Position>12</Position>
+      <StoredType>double|0s</StoredType>
+    </column>
+    <column id="401" parent="322" name="mar_target_efficiency">
+      <Position>13</Position>
+      <StoredType>double|0s</StoredType>
+    </column>
+    <column id="402" parent="322" name="campaign_id">
+      <Position>14</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <foreign-key id="403" parent="322" name="FKdcxcgdurlyu24lml3mclo5qyl">
+      <ColNames>campaign_id</ColNames>
+      <RefColNames>campaign_id</RefColNames>
+      <RefTableName>campaign</RefTableName>
+      <RefTableParentName>secretpang</RefTableParentName>
+    </foreign-key>
+    <index id="404" parent="322" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="405" parent="322" name="FKdcxcgdurlyu24lml3mclo5qyl">
+      <ColNames>campaign_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="406" parent="322" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="407" parent="323" name="email">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <column id="408" parent="323" name="created_at">
       <Position>2</Position>
       <StoredType>datetime(6)|0s</StoredType>
     </column>
-    <column id="512" parent="333" name="updated_at">
+    <column id="409" parent="323" name="name">
       <Position>3</Position>
-      <StoredType>datetime(6)|0s</StoredType>
+      <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <column id="513" parent="333" name="email">
-      <NotNull>1</NotNull>
+    <column id="410" parent="323" name="password">
       <Position>4</Position>
       <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <column id="514" parent="333" name="name">
+    <column id="411" parent="323" name="remain_membership_time">
       <Position>5</Position>
-      <StoredType>varchar(255)|0s</StoredType>
+      <StoredType>datetime(6)|0s</StoredType>
     </column>
-    <column id="515" parent="333" name="password">
+    <column id="412" parent="323" name="role">
       <Position>6</Position>
-      <StoredType>varchar(255)|0s</StoredType>
-    </column>
-    <column id="516" parent="333" name="role">
-      <Position>7</Position>
       <StoredType>enum(&apos;ADMIN&apos;, &apos;BRONZE&apos;, &apos;GOLD&apos;, &apos;SILVER&apos;, &apos;USER&apos;)|0e</StoredType>
     </column>
-    <index id="517" parent="333" name="PRIMARY">
+    <column id="413" parent="323" name="updated_at">
+      <Position>7</Position>
+      <StoredType>datetime(6)|0s</StoredType>
+    </column>
+    <index id="414" parent="323" name="PRIMARY">
       <ColNames>email</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="518" parent="333" name="PRIMARY">
+    <key id="415" parent="323" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="519" parent="334" name="mem_date">
-      <Position>1</Position>
-      <StoredType>date|0s</StoredType>
-    </column>
-    <column id="520" parent="334" name="campaign_id">
-      <Position>2</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="521" parent="334" name="id">
+    <column id="416" parent="324" name="id">
       <AutoIncrement>1</AutoIncrement>
       <NotNull>1</NotNull>
-      <Position>3</Position>
+      <Position>1</Position>
       <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="522" parent="334" name="mem_content">
-      <Position>4</Position>
+    <column id="417" parent="324" name="mem_content">
+      <Position>2</Position>
       <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <foreign-key id="523" parent="334" name="FK43rfsrtpvy1siwoedcaq4qs0q">
+    <column id="418" parent="324" name="mem_date">
+      <Position>3</Position>
+      <StoredType>date|0s</StoredType>
+    </column>
+    <column id="419" parent="324" name="campaign_id">
+      <Position>4</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <foreign-key id="420" parent="324" name="FK43rfsrtpvy1siwoedcaq4qs0q">
       <ColNames>campaign_id</ColNames>
       <RefColNames>campaign_id</RefColNames>
       <RefTableName>campaign</RefTableName>
       <RefTableParentName>secretpang</RefTableParentName>
     </foreign-key>
-    <index id="524" parent="334" name="PRIMARY">
+    <index id="421" parent="324" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="525" parent="334" name="FK43rfsrtpvy1siwoedcaq4qs0q">
+    <index id="422" parent="324" name="FK43rfsrtpvy1siwoedcaq4qs0q">
       <ColNames>campaign_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="526" parent="334" name="PRIMARY">
+    <key id="423" parent="324" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="527" parent="335" name="ad_cost">
+    <column id="424" parent="325" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="425" parent="325" name="ad_cost">
+      <Position>2</Position>
       <StoredType>decimal(15,2 digit)|0s</StoredType>
     </column>
-    <column id="528" parent="335" name="click_through_rate">
-      <Position>2</Position>
+    <column id="426" parent="325" name="ad_group">
+      <Position>3</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <column id="427" parent="325" name="ad_placement">
+      <Position>4</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <column id="428" parent="325" name="ad_type">
+      <Position>5</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <column id="429" parent="325" name="billing_method">
+      <Position>6</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <column id="430" parent="325" name="campaign_id">
+      <Position>7</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <column id="431" parent="325" name="campaign_name">
+      <Position>8</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <column id="432" parent="325" name="campaign_start_date">
+      <Position>9</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <column id="433" parent="325" name="click_through_rate">
+      <Position>10</Position>
       <StoredType>decimal(5,2 digit)|0s</StoredType>
     </column>
-    <column id="529" parent="335" name="direct_ad_roi_14_days">
-      <Position>3</Position>
-      <StoredType>decimal(10,2 digit)|0s</StoredType>
-    </column>
-    <column id="530" parent="335" name="direct_ad_roi_1_day">
-      <Position>4</Position>
-      <StoredType>decimal(10,2 digit)|0s</StoredType>
-    </column>
-    <column id="531" parent="335" name="direct_conversion_revenue_14_days">
-      <Position>5</Position>
-      <StoredType>decimal(15,2 digit)|0s</StoredType>
-    </column>
-    <column id="532" parent="335" name="direct_conversion_revenue_1_day">
-      <Position>6</Position>
-      <StoredType>decimal(15,2 digit)|0s</StoredType>
-    </column>
-    <column id="533" parent="335" name="indirect_ad_roi_14_days">
-      <Position>7</Position>
-      <StoredType>decimal(10,2 digit)|0s</StoredType>
-    </column>
-    <column id="534" parent="335" name="indirect_ad_roi_1_day">
-      <Position>8</Position>
-      <StoredType>decimal(10,2 digit)|0s</StoredType>
-    </column>
-    <column id="535" parent="335" name="indirect_conversion_revenue_14_days">
-      <Position>9</Position>
-      <StoredType>decimal(15,2 digit)|0s</StoredType>
-    </column>
-    <column id="536" parent="335" name="indirect_conversion_revenue_1_day">
-      <Position>10</Position>
-      <StoredType>decimal(15,2 digit)|0s</StoredType>
-    </column>
-    <column id="537" parent="335" name="total_ad_roi_14_days">
+    <column id="434" parent="325" name="clicks">
       <Position>11</Position>
-      <StoredType>decimal(10,2 digit)|0s</StoredType>
+      <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="538" parent="335" name="total_ad_roi_1_day">
+    <column id="435" parent="325" name="date">
       <Position>12</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <column id="436" parent="325" name="direct_ad_roi_14_days">
+      <Position>13</Position>
       <StoredType>decimal(10,2 digit)|0s</StoredType>
     </column>
-    <column id="539" parent="335" name="total_conversion_revenue_14_days">
-      <Position>13</Position>
-      <StoredType>decimal(15,2 digit)|0s</StoredType>
-    </column>
-    <column id="540" parent="335" name="total_conversion_revenue_1_day">
+    <column id="437" parent="325" name="direct_ad_roi_1_day">
       <Position>14</Position>
+      <StoredType>decimal(10,2 digit)|0s</StoredType>
+    </column>
+    <column id="438" parent="325" name="direct_conversion_revenue_14_days">
+      <Position>15</Position>
       <StoredType>decimal(15,2 digit)|0s</StoredType>
     </column>
-    <column id="541" parent="335" name="clicks">
-      <Position>15</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="542" parent="335" name="direct_orders_14_days">
+    <column id="439" parent="325" name="direct_conversion_revenue_1_day">
       <Position>16</Position>
-      <StoredType>bigint|0s</StoredType>
+      <StoredType>decimal(15,2 digit)|0s</StoredType>
     </column>
-    <column id="543" parent="335" name="direct_orders_1_day">
+    <column id="440" parent="325" name="direct_orders_14_days">
       <Position>17</Position>
       <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="544" parent="335" name="direct_sales_quantity_14_days">
+    <column id="441" parent="325" name="direct_orders_1_day">
       <Position>18</Position>
       <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="545" parent="335" name="direct_sales_quantity_1_day">
+    <column id="442" parent="325" name="direct_sales_quantity_14_days">
       <Position>19</Position>
       <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="546" parent="335" name="id">
-      <AutoIncrement>1</AutoIncrement>
-      <NotNull>1</NotNull>
+    <column id="443" parent="325" name="direct_sales_quantity_1_day">
       <Position>20</Position>
       <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="547" parent="335" name="impressions">
+    <column id="444" parent="325" name="impressions">
       <Position>21</Position>
       <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="548" parent="335" name="indirect_orders_14_days">
+    <column id="445" parent="325" name="indirect_ad_roi_14_days">
       <Position>22</Position>
-      <StoredType>bigint|0s</StoredType>
+      <StoredType>decimal(10,2 digit)|0s</StoredType>
     </column>
-    <column id="549" parent="335" name="indirect_orders_1_day">
+    <column id="446" parent="325" name="indirect_ad_roi_1_day">
       <Position>23</Position>
-      <StoredType>bigint|0s</StoredType>
+      <StoredType>decimal(10,2 digit)|0s</StoredType>
     </column>
-    <column id="550" parent="335" name="indirect_sales_quantity_14_days">
+    <column id="447" parent="325" name="indirect_conversion_revenue_14_days">
       <Position>24</Position>
-      <StoredType>bigint|0s</StoredType>
+      <StoredType>decimal(15,2 digit)|0s</StoredType>
     </column>
-    <column id="551" parent="335" name="indirect_sales_quantity_1_day">
+    <column id="448" parent="325" name="indirect_conversion_revenue_1_day">
       <Position>25</Position>
-      <StoredType>bigint|0s</StoredType>
+      <StoredType>decimal(15,2 digit)|0s</StoredType>
     </column>
-    <column id="552" parent="335" name="total_orders_14_days">
+    <column id="449" parent="325" name="indirect_orders_14_days">
       <Position>26</Position>
       <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="553" parent="335" name="total_orders_1_day">
+    <column id="450" parent="325" name="indirect_orders_1_day">
       <Position>27</Position>
       <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="554" parent="335" name="total_sales_quantity_14_days">
+    <column id="451" parent="325" name="indirect_sales_quantity_14_days">
       <Position>28</Position>
       <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="555" parent="335" name="total_sales_quantity_1_day">
+    <column id="452" parent="325" name="indirect_sales_quantity_1_day">
       <Position>29</Position>
       <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="556" parent="335" name="ad_group">
+    <column id="453" parent="325" name="keyword">
       <Position>30</Position>
       <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <column id="557" parent="335" name="ad_placement">
+    <column id="454" parent="325" name="option_id_advertised">
       <Position>31</Position>
       <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <column id="558" parent="335" name="ad_type">
+    <column id="455" parent="325" name="option_id_with_conversion_sales">
       <Position>32</Position>
       <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <column id="559" parent="335" name="billing_method">
+    <column id="456" parent="325" name="product_advertised">
       <Position>33</Position>
       <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <column id="560" parent="335" name="campaign_id">
+    <column id="457" parent="325" name="product_with_conversion_sales">
       <Position>34</Position>
       <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <column id="561" parent="335" name="campaign_name">
+    <column id="458" parent="325" name="sales_method">
       <Position>35</Position>
       <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <column id="562" parent="335" name="campaign_start_date">
+    <column id="459" parent="325" name="total_ad_roi_14_days">
       <Position>36</Position>
-      <StoredType>varchar(255)|0s</StoredType>
+      <StoredType>decimal(10,2 digit)|0s</StoredType>
     </column>
-    <column id="563" parent="335" name="date">
+    <column id="460" parent="325" name="total_ad_roi_1_day">
       <Position>37</Position>
-      <StoredType>varchar(255)|0s</StoredType>
+      <StoredType>decimal(10,2 digit)|0s</StoredType>
     </column>
-    <column id="564" parent="335" name="keyword">
+    <column id="461" parent="325" name="total_conversion_revenue_14_days">
       <Position>38</Position>
-      <StoredType>varchar(255)|0s</StoredType>
+      <StoredType>decimal(15,2 digit)|0s</StoredType>
     </column>
-    <column id="565" parent="335" name="option_id_advertised">
+    <column id="462" parent="325" name="total_conversion_revenue_1_day">
       <Position>39</Position>
-      <StoredType>varchar(255)|0s</StoredType>
+      <StoredType>decimal(15,2 digit)|0s</StoredType>
     </column>
-    <column id="566" parent="335" name="option_id_with_conversion_sales">
+    <column id="463" parent="325" name="total_orders_14_days">
       <Position>40</Position>
-      <StoredType>varchar(255)|0s</StoredType>
+      <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="567" parent="335" name="product_advertised">
+    <column id="464" parent="325" name="total_orders_1_day">
       <Position>41</Position>
-      <StoredType>varchar(255)|0s</StoredType>
+      <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="568" parent="335" name="product_with_conversion_sales">
+    <column id="465" parent="325" name="total_sales_quantity_14_days">
       <Position>42</Position>
-      <StoredType>varchar(255)|0s</StoredType>
+      <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="569" parent="335" name="sales_method">
+    <column id="466" parent="325" name="total_sales_quantity_1_day">
       <Position>43</Position>
-      <StoredType>varchar(255)|0s</StoredType>
+      <StoredType>bigint|0s</StoredType>
     </column>
-    <index id="570" parent="335" name="PRIMARY">
+    <index id="467" parent="325" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="571" parent="335" name="PRIMARY">
+    <key id="468" parent="325" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
