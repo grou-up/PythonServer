@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="df19cd94-53ce-463d-b4ce-4830038ca66d" name="Changes" comment="[feat] second file upload">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eb4876c0-7dcb-4bee-a5a8-63430957e0e7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eb4876c0-7dcb-4bee-a5a8-63430957e0e7.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DjangoServer/lottoTest/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoServer/lottoTest/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DjangoServer/lottoTest/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoServer/lottoTest/views.py" afterDir="false" />
@@ -44,7 +43,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
     &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;test/keyword&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/song/Desktop/Github/DjangoServer/DjangoServer&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -132,6 +131,8 @@
       <workItem from="1736137131652" duration="426000" />
       <workItem from="1736146055067" duration="2476000" />
       <workItem from="1736174558952" duration="3966000" />
+      <workItem from="1736243136630" duration="1270000" />
+      <workItem from="1736258117983" duration="2344000" />
     </task>
     <task id="LOCAL-00001" summary="entity set">
       <option name="closed" value="true" />
