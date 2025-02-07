@@ -55,6 +55,11 @@ DATABASES = {
         "PASSWORD": os.environ.get("DB_PASSWORD", env("DB_PASSWORD", default="1234")),
         "HOST": os.environ.get("DB_HOST", env("DB_HOST", default="localhost")),
         "PORT": os.environ.get("DB_PORT", env("DB_PORT", default="3306")),
+        'OPTIONS': {
+            'use_unicode': True,
+            'charset': 'utf8mb4',
+            'collation': 'utf8mb4_unicode_ci',  # 변경된 부분
+        },
     }
 }
 

@@ -1,3 +1,4 @@
+import json
 from csv import excel
 from datetime import datetime
 import time
@@ -220,7 +221,7 @@ def update_margin_data(margin_data, margin_key, row, campaign, cop_date):
 
 def update_keyword_data(keyword_data, keyword_key, row, campaign, cop_date, key_keyword, cop_search_type):
     key_exclude_flag = row.get('제외여부', False)
-    cv_option_id = row['광고전환매출발생 상품명']  
+    cv_option_id = str(row['광고전환매출발생 상품명'])
     orders = row['총 판매수량(14일)']  # 판매 수량
     if keyword_key not in keyword_data:
         keyword_data[keyword_key] = {
@@ -330,6 +331,7 @@ def save_keywords(keyword_data):
     insert_count = 0
     duplicate_count = 0
     for key, data in keyword_data.items():
+        key_product_sales_json = json.dumps(data['key_product_sales'], ensure_ascii=False)
         if not Keyword.objects.filter(
                 key_keyword=data['key_keyword'],
                 key_date=data['key_date'],
@@ -354,7 +356,7 @@ def save_keywords(keyword_data):
                 key_exclude_flag=data['key_exclude_flag'],
                 key_search_type=data['key_search_type'],
                 campaign=data['campaign'],
-                key_product_sales=data['key_product_sales'],
+                key_product_sales=key_product_sales_json,
             ))
             insert_count += 1  # 들어간 값
         else:
