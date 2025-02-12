@@ -66,6 +66,14 @@ jobs:
             }
           }
           EOF
+      - name: Create ZIP package
+        run: |
+          source venv/bin/activate
+          venv/bin/zappa package production
+
+      - name: Upload to S3
+        run: |
+          aws s3 cp zappa-*.zip s3://${{ secrets.AWS_S3_BUCKET }} --region ap-northeast-2
 
       - name: Deploy to AWS Lambda
         env:
