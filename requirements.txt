@@ -1,6 +1,6 @@
 argcomplete==3.5.3
 asgiref==3.8.1
-awscli==1.37.10
+awscli==1.27.0  #  최신 안정 버전으로 업데이트
 boto3==1.34.145 # AWS lambda랑 맞춰야함
 botocore==1.34.145 # AWS lambda랑 맞춰야함
 certifi==2025.1.31
