@@ -1,8 +1,8 @@
 argcomplete==3.5.3
 asgiref==3.8.1
-awscli==1.27.0  #  최신 안정 버전으로 업데이트
-boto3==1.34.145 # AWS lambda랑 맞춰야함
-botocore==1.34.145 # AWS lambda랑 맞춰야함
+awscli==1.27.0  # 최신 안정 버전
+boto3==1.26.0   # AWS Lambda와 호환
+botocore==1.29.0 # AWS Lambda와 호환
 certifi==2025.1.31
 cfn-flip==1.3.0
 charset-normalizer==3.4.1
