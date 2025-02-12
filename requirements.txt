@@ -1,7 +1,7 @@
 argcomplete==3.5.3
 asgiref==3.8.1
 boto3==1.29.1
-botocore==1.32.1
+botocore==1.29.1
 awscli==1.27.1
 certifi==2025.1.31
 cfn-flip==1.3.0
