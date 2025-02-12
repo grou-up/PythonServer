@@ -1,6 +1,6 @@
 argcomplete==3.5.3
 asgiref==3.8.1
-awscli==1.34.0        # botocore 1.34.145와 호환
+awscli==1.34.1        # botocore 1.34.145와 호환
 boto3==1.34.0         # botocore 1.34.145와 호환
 botocore==1.34.145
 certifi==2025.1.31
