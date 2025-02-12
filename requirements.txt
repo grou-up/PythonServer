@@ -2,7 +2,7 @@ argcomplete==3.5.3
 asgiref==3.8.1
 awscli==1.27.0  # 최신 안정 버전
 boto3==1.24.0   # AWS Lambda와 호환
-botocore==1.27.0 # AWS Lambda와 호환
+botocore==1.29.0 # AWS CLI와 호환
 s3transfer==0.6.0 # awscli와 호환되는 버전
 PyYAML==5.4.1    # awscli와 호환되는 버전
 certifi==2022.12.7
